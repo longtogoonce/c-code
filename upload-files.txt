@@ -1,0 +1,19 @@
+                       the method of upload files
+1.先创建一个文件：touch [name].txt
+2.创建一个文件夹：mkdir testgit
+2.把这个文件移动到这个文件夹当中:mv name.txt testgit/
+		你当前可以通过ls testgit/来查看这个文件夹是否含name.txt
+		如果是第一次创建的可以初始化：git init
+3.加入你在github的仓库地址：git remote add upstrem  https://github.com/namee/c-code.git
+		git add.
+		git commit -m "在github中的名字“
+4.如果你的guihub账号没有连接这个远程库，则需要设置
+		git config --global user.email "you@example.com"
+                git config --global user.name "Your Name"
+5.链接之后：开始上传
+		git push -u upstrem
+此时终端显示：Username for 'https://github.com':输入你的名字
+passwoed for 'https://name@github.com':输入你的密钥；
+		密钥在个人setting中，去设置，最后复制这个密钥就行了 
+
+
